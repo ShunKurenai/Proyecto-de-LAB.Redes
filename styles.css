@@ -40,13 +40,21 @@ ul, ol{
 }
 body{
     background-color: grey;
+    background-image: url(1366_2000.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .centrar{
-    width: 500px;
+    width: 520px;
 }
 .ordenar{
     float: left;
+    background-color: aliceblue;
 }
 .cent{
     text-align: center;
+}
+.color{
+    background-color: white;
+    width: 550px;
 }
