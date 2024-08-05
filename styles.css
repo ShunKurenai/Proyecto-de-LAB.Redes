@@ -16,6 +16,7 @@ ul, ol{
     text-decoration: none;
     padding: 10px 25px;
     display: block;
+    font-family: 'Times New Roman', Times, serif;
 }
 .nav li a:hover{
     background-color: #434343;
@@ -39,22 +40,27 @@ ul, ol{
     top: 0px;
 }
 body{
-    background-color: grey;
-    background-image: url(1366_2000.jpg);
-    background-repeat: no-repeat;
+    background-image: url(./Imagenes/1366_2000.jpg);
     background-size: cover;
 }
 .centrar{
-    width: 520px;
+    width: 500px;
 }
 .ordenar{
     float: left;
-    background-color: aliceblue;
 }
 .cent{
     text-align: center;
 }
-/* .color{
-    background-color: white;
-    width: 550px; */
-/* } */
+.color{
+    width: 550px;
+    border: solid 5px black;
+    background-color: #434343;
+}
+.color2{
+    width: 230px;
+    float: left;
+}
+.color3{
+    background-color: #434343;
+}
