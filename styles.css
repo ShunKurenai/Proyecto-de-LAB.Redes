@@ -56,11 +56,26 @@ body{
     width: 550px;
     border: solid 5px black;
     background-color: #434343;
+    float: left;
 }
 .color2{
-    width: 230px;
+    width: 410px;
     float: left;
 }
 .color3{
+    width: 350px;
+    border: solid 5px black;
     background-color: #434343;
+    float: left;
+}
+.color4{
+    float: left;
+    width: 500px;
+}
+.min{
+    width: 20px;
+}
+.color5{
+    width: 210px;
+    float: left;
 }
