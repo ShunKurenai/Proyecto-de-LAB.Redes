@@ -20,7 +20,7 @@
                     </li>
                     <li><a href="">Personajes</a>
                         <ul>
-                            <li><a href="./Index del menu/Mercaderes.html">Mercaderes</a></li>
+                            <li><a href="./Index del menu/Mercaderes.php">Mercaderes</a></li>
                             <li><a href="./Index del menu/Jefes.html">Jefes</a></li>
                             <li><a href="./Index del menu/Enemigos.html">Enemigos</a></li>
                         </ul>
