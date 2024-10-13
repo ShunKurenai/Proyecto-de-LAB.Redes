@@ -78,16 +78,37 @@
         <img class="centrar ordenar" src="../Imagenes/Andre_de_Astora.png" alt="">
         <div>
         <?php
-                $amogus = new mysqli("localhost", "phpmyadmin", "RedesInformaticas", "dbarreto");
+                $conexion = new mysqli("localhost", "phpmyadmin", "RedesInformaticas", "barreto");
 
-                $conssult ="SELECT `ID`, `Nombre`, `Descripcion` FROM `npc` WHERE 1";
+                $conssult ="SELECT `ID`, `Nombre`, `Ubicacion`, `Objetos_venta`, `Descripcion`, `Lore` FROM `npc` WHERE 1";
                             
-            $resultado = mysqli_query($amogus, $conssult);
+            $resultado = mysqli_query($conexion, $conssult);
                             
                             
             if($resultado->num_rows > 0){
                 while($filas = $resultado->fetch_assoc()){
-                    echo "<h1>" . $filas["Nombre"] . "</h1>" . "<p>". $filas["Descripcion"] . "</p>" ;
+                    echo "<h1>" . $filas["Nombre"] . "</h1>" . "<h4>". $filas["Descripcion"] . "</h4>" ;
+                }
+            }
+        ?>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="centrar ordenar" src="../Imagenes/Anochecer.png" alt="">
+        <div>
+        <?php
+                $conexion = new mysqli("localhost", "phpmyadmin", "RedesInformaticas", "barreto");
+
+                $conssult ="SELECT `ID`, `Nombre`, `Ubicacion`, `Objetos_venta`, `Descripcion`, `Lore` FROM `npc` WHERE 1";
+                            
+            $resultado = mysqli_query($conexion, $conssult);
+                            
+                            
+            if($resultado->num_rows > 0){
+                while($filas = $resultado->fetch_assoc()){
+                    echo "<h1>" . $filas["Nombre"] . "</h1>" . "<h4>". $filas["Descripcion"] . "</h4>" ;
                 }
             }
         ?>
