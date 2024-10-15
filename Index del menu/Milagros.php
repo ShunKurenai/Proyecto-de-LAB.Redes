@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div id="header">
@@ -12,7 +12,7 @@
            <img src="../Imagenes/Dark_Souls_Logo.png" alt="">
             <li><a href="">DARK SOULS</a>
                <ul>
-                   <li><a href="">DLC</a>
+                   </li><li><a href="">DLC</a>
                        <ul>
                            <li><a href="../Index del menu/DLC.php">Artorias of the Abyss</a></li>
                        </ul>
@@ -66,31 +66,31 @@
                </ul>
             </li>
         </ul>
-   </div>
-   <br>
-   <br>
-   <br>
-   <br>
-    <Header>
-        <h1 class="cent">Mercaderes de Dark Souls</h1>
-    </Header>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header>
+        <h1 class="cent">Hechizos de Dark souls</h1>
+    </header>
     <main>
-        <div>
+    <div>
         <?php
                 $conexion = new mysqli("localhost", "root", "", "barreto");
 
-                $conssult ="SELECT `ID`, `Nombre`, `Ubicacion`, `Objetos_venta`, `Descripcion`, `Lore`, Imagenes FROM `npc` WHERE 1";
+                $conssult ="SELECT `ID`, `Nombre`, `Daño`, `Requisitos`, `Ubicacion`, `Descripcion`, `Imagenes` FROM `milagros` WHERE 1";
                             
             $resultado = mysqli_query($conexion, $conssult);
                             
                             
             if($resultado->num_rows > 0){
                 while($filas = $resultado->fetch_assoc()){
-                    echo " <div class:\"hola\"> <img class=\"centrar\" src=\"../Imagenes/Mercaderes/" . $filas["Imagenes"] . "\"" . "alt=\"\"> <h1>" . $filas["Nombre"] . "</h1>" . "<h3>". $filas["Ubicacion"] . "</h3>" . "<h3>". $filas["Objetos_venta"] . "</h3>" . "<h3>". $filas["Descripcion"] . "</h3>" . "<h3>". $filas["Lore"] . "</h3>" . "</div>" ;
+                    echo " <div class:\"hola\"> <img class=\"centrar\" src=\"../Imagenes/Milagros/" . $filas["Imagenes"] . "\"" . "alt=\"\"> <h1>" . $filas["Nombre"] . "</h1>" . "<h3>". $filas["Daño"] . "</h3>" . "<h3>". $filas["Requisitos"] . "</h3>" . "<h3>". $filas["Ubicacion"] . "</h3>" . "<h3>". $filas["Descripcion"] . "</h3>" . "</div>" ;
                 }
             }
         ?>
         </div>
     </main>
 </body>
-        
+</html>

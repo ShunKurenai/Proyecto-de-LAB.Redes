@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div id="header">
@@ -71,26 +71,27 @@
    <br>
    <br>
    <br>
-    <Header>
-        <h1 class="cent">Mercaderes de Dark Souls</h1>
-    </Header>
-    <main>
-        <div>
+   <header>
+    <h1 class="cent">Enemigos de Dark souls</h1>
+   </header>
+   <main>
+    <img class="color3" src="../Imagenes/Basilisco (1).jpg" alt="">
+    <div>
         <?php
                 $conexion = new mysqli("localhost", "root", "", "barreto");
 
-                $conssult ="SELECT `ID`, `Nombre`, `Ubicacion`, `Objetos_venta`, `Descripcion`, `Lore`, Imagenes FROM `npc` WHERE 1";
+                $conssult ="SELECT `ID`, `Nombre`, `Ubicacion`, `Tipo`, `Salud`, `Drop_objetos`, `Imagenes` FROM `enemigos` WHERE 1";
                             
             $resultado = mysqli_query($conexion, $conssult);
                             
                             
             if($resultado->num_rows > 0){
                 while($filas = $resultado->fetch_assoc()){
-                    echo " <div class:\"hola\"> <img class=\"centrar\" src=\"../Imagenes/Mercaderes/" . $filas["Imagenes"] . "\"" . "alt=\"\"> <h1>" . $filas["Nombre"] . "</h1>" . "<h3>". $filas["Ubicacion"] . "</h3>" . "<h3>". $filas["Objetos_venta"] . "</h3>" . "<h3>". $filas["Descripcion"] . "</h3>" . "<h3>". $filas["Lore"] . "</h3>" . "</div>" ;
+                    echo " <div class:\"hola\"> <img class=\"centrar\" src=\"../Imagenes/Enemigos/" . $filas["Imagenes"] . "\"" . "alt=\"\"> <h1>" . $filas["Nombre"] . "</h1>" . "<h3>". $filas["Ubicacion"] . "</h3>" . "<h3>". $filas["Tipo"] . "</h3>" . "<h3>". $filas["Salud"] . "</h3>" . "<h3>". $filas["Drop_objetos"] . "</h3>" . "</div>" ;
                 }
             }
         ?>
         </div>
-    </main>
+   </main>
 </body>
-        
+</html>

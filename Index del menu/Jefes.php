@@ -72,21 +72,21 @@
    <br>
    <br>
     <Header>
-        <h1 class="cent">Mercaderes de Dark Souls</h1>
+        <h1 class="cent">Jefes de Dark Souls</h1>
     </Header>
     <main>
         <div>
         <?php
                 $conexion = new mysqli("localhost", "root", "", "barreto");
 
-                $conssult ="SELECT `ID`, `Nombre`, `Ubicacion`, `Objetos_venta`, `Descripcion`, `Lore`, Imagenes FROM `npc` WHERE 1";
+                $conssult ="SELECT `ID`, `Nombre`, `Ubicacion`, `Salud`, `Almas`, `Drop_objetos`, `Descripcion`, `Imagenes` FROM `jefes` WHERE 1";
                             
             $resultado = mysqli_query($conexion, $conssult);
                             
                             
             if($resultado->num_rows > 0){
                 while($filas = $resultado->fetch_assoc()){
-                    echo " <div class:\"hola\"> <img class=\"centrar\" src=\"../Imagenes/Mercaderes/" . $filas["Imagenes"] . "\"" . "alt=\"\"> <h1>" . $filas["Nombre"] . "</h1>" . "<h3>". $filas["Ubicacion"] . "</h3>" . "<h3>". $filas["Objetos_venta"] . "</h3>" . "<h3>". $filas["Descripcion"] . "</h3>" . "<h3>". $filas["Lore"] . "</h3>" . "</div>" ;
+                    echo " <div class:\"hola\"> <img class=\"centrar\" src=\"../Imagenes/Jefes/" . $filas["Imagenes"] . "\"" . "alt=\"\"> <h1>" . $filas["Nombre"] . "</h1>" . "<h3>". $filas["Ubicacion"] . "</h3>" . "<h3>". $filas["Salud"] . "</h3>" . "<h3>". $filas["Almas"] . "</h3>" . "<h3>". $filas["Drop_objetos"] . "</h3>" . "<h3>". $filas["Descripcion"] . "</h3>" . "</div>" ;
                 }
             }
         ?>

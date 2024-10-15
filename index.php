@@ -15,21 +15,21 @@
                 <ul>
                     <li><a href="">DLC</a>
                         <ul>
-                            <li><a href="">Artorias of the Abyss</a></li>
+                            <li><a href="./Index del menu/DLC.php">Artorias of the Abyss</a></li>
                         </ul>
                     </li>
                     <li><a href="">Personajes</a>
                         <ul>
                             <li><a href="./Index del menu/Mercaderes.php">Mercaderes</a></li>
-                            <li><a href="./Index del menu/Jefes.html">Jefes</a></li>
-                            <li><a href="./Index del menu/Enemigos.html">Enemigos</a></li>
+                            <li><a href="./Index del menu/Jefes.php">Jefes</a></li>
+                            <li><a href="./Index del menu/Enemigos.php">Enemigos</a></li>
                         </ul>
                     </li>
                     <li><a href="">Magias</a>
                         <ul>
-                            <li><a href="./Index del menu/Hechizos.html">Hechizos</a></li>
-                            <li><a href="">Milagros</a></li>
-                            <li><a href="">Piromancias</a></li>
+                            <li><a href="./Index del menu/Hechizos.php">Hechizos</a></li>
+                            <li><a href="./Index del menu/Milagros.php">Milagros</a></li>
+                            <li><a href="./Index del menu/Piromansias.php">Piromancias</a></li>
                         </ul>
                     </li>
                     <li><a href="">Equipamiento</a>
@@ -53,15 +53,15 @@
                     </li>
                     <li><a href="">Pactos</a>
                         <ul>
-                            <li><a href="">Blanca Via</a></li>
-                            <li><a href="">Camino del dragon</a></li>
-                            <li><a href="">Cazador de los bosques</a></li>
-                            <li><a href="">Espada de la Luna oscura</a></li>
-                            <li><a href="">Espectro Oscuro</a></li>
-                            <li><a href="">Guardias de la princesa</a></li>
-                            <li><a href="">Guerrero de la Luz solar</a></li>
-                            <li><a href="">Siervo del Rey del cementerio</a></li>
-                            <li><a href="">Sirviente del caos</a></li>
+                            <li><a href="./Index del menu/Blanca.php">Blanca Via</a></li>
+                            <li><a href="./Index del menu/Dragon.php">Camino del dragon</a></li>
+                            <li><a href="./Index del menu/Cazador.php">Cazador de los bosques</a></li>
+                            <li><a href="./Index del menu/Luna.php">Espada de la Luna oscura</a></li>
+                            <li><a href="./Index del menu/Espectro.php">Espectro Oscuro</a></li>
+                            <li><a href="./Index del menu/Guardias.php">Guardias de la princesa</a></li>
+                            <li><a href="./Index del menu/Guerrero.php">Guerrero de la Luz solar</a></li>
+                            <li><a href="./Index del menu/Cementerio.php">Siervo del Rey del cementerio</a></li>
+                            <li><a href="./Index del menu/Sirviente.php">Sirviente del caos</a></li>
                         </ul></li>
                     <li><a href="">Clases</a></li>
                 </ul>
